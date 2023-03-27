@@ -1,3 +1,4 @@
+
 const holes = document.querySelectorAll('.hole');
   const scoreBoard = document.querySelector('.score');
   const moles = document.querySelectorAll('.mole');
@@ -30,11 +31,15 @@ const holes = document.querySelectorAll('.hole');
   }
 
   function startGame() {
+       var arr = {"NaCl","NH4","SO4","NO3","Cr2O7"};
+var randnumb = Math.floor(Math.random()*arr.length);
+    alert("Look for arr[randnumb]'s molar mass!")
     scoreBoard.textContent = 0;
     timeUp = false;
     score = 0;
     peep();
-    setTimeout(() => timeUp = true, 10000)
+    setTimeout(() => timeUp = true, 10000
+     
   }
 
   function whack(e) {
