@@ -28,7 +28,8 @@ if (!timeUp) peep();
 function startGame() {
 scoreBoard.textContent = 0;
 timeUp = false;
-score = score+1;
+score = 0;
+peep();
 setTimeout(() => timeUp = true, 10000)
 }
 function whack(e) {
