@@ -31,8 +31,8 @@ const holes = document.querySelectorAll('.hole');
   }
 
   function startGame() {
-       var arr = {"NaCl","NH4","SO4","NO3","Cr2O7"};
-var randnumb = Math.floor(Math.random()*arr.length);
+    const arr = {"NaCl","NH4","SO4","NO3","Cr2O7"};
+    const randnumb = Math.floor(Math.random()*arr.length);
     alert("Look for arr[randnumb]'s molar mass!")
     scoreBoard.textContent = 0;
     timeUp = false;
