@@ -37,7 +37,7 @@ const holes = document.querySelectorAll('.hole');
   function startGame() {
     
     subvar = randomcompound(Math.floor(Math.random()*arr.length)); 
-    alert("Look for " + subvar + " molar mass!);
+    alert("Look for " + subvar + "'s molar mass!);
     scoreBoard.textContent = 0;
     timeUp = false;
     score = 0;
