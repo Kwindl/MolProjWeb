@@ -5,7 +5,11 @@ const holes = document.querySelectorAll('.hole');
   let lastHole;
   let timeUp = false;
   let score = 0;
+  let arr = {"NaCl","NH4","SO4","NO3","Cr2O7"};
 
+  function randomcompound(randnumb) {
+    return arr[randnumb];
+  }
   function randomTime(min, max) { 
     return Math.round(Math.random() * (max - min) + min);
   }
@@ -31,8 +35,7 @@ const holes = document.querySelectorAll('.hole');
   }
 
   function startGame() {
-    const arr = {"NaCl","NH4","SO4","NO3","Cr2O7"};
-    const randnumb = Math.floor(Math.random()*arr.length);
+    const randemt = randomcompound(Math.floor(Math.random()*arr.length));
     alert("Look for arr[randnumb]'s molar mass!");
     scoreBoard.textContent = 0;
     timeUp = false;
