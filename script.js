@@ -35,6 +35,7 @@ const holes = document.querySelectorAll('.hole');
   }
 
   function startGame() {
+     alert("Look for Nacls molar mass!");
     const randemt = randomcompound(Math.floor(Math.random()*arr.length));
     alert("Look for arr[randnumb]'s molar mass!");
     scoreBoard.textContent = 0;
