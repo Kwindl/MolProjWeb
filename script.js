@@ -26,6 +26,7 @@ if (!timeUp) peep();
 }, time);
 }
 function startGame() {
+alert("GET THOSE MOLES");
 scoreBoard.textContent = 0;
 timeUp = false;
 score = 0;
