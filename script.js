@@ -6,7 +6,7 @@ const holes = document.querySelectorAll('.hole');
   let timeUp = false;
   let score = 0;
   let arr = ["NaCl","NH4","SO4","NO3","Cr2O7"];
-
+  let subvar = ""
   function randomcompound(randnumb) {
     return arr[randnumb];
   }
@@ -35,9 +35,8 @@ const holes = document.querySelectorAll('.hole');
   }
 
   function startGame() {
-     alert("Look for Nacls molar mass!");
-    const randemt = randomcompound(Math.floor(Math.random()*arr.length));
-    alert("Look for " + arr[randnumb] + " molar mass!);
+    subvar = randomcompound(Math.floor(Math.random()*arr.length)); 
+    alert("Look for " + subvar + " molar mass!);
     scoreBoard.textContent = 0;
     timeUp = false;
     score = 0;
