@@ -56,3 +56,4 @@ const startbutton = document.querySelector('#start');
   }
 
   moles.forEach(mole => mole.addEventListener('click', whack));
+ 
