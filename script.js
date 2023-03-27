@@ -38,7 +38,7 @@ const startbutton = document.querySelector('.start');
   function startGame() {
     startbutton.disabled = true;
     subvar = randomcompound(Math.floor(Math.random()*arr.length)); 
-    alert("Look for " + subvar + "'s molar mass!");
+
     scoreBoard.textContent = 0;
     timeUp = false;
     score = 0;
