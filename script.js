@@ -26,12 +26,12 @@ if (!timeUp) peep();
 }, time);
 }
 function startGame() {
-alert("GET THOSE MOLES");
 scoreBoard.textContent = 0;
 timeUp = false;
 score = 0;
 peep();
 setTimeout(() => timeUp = true, 10000)
+alert("GET THOSE MOLES");
 }
 function whack(e) {
 if(!e.isTrusted) return;
