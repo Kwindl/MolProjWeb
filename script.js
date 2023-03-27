@@ -2,6 +2,7 @@
 const holes = document.querySelectorAll('.hole');
   const scoreBoard = document.querySelector('.score');
   const moles = document.querySelectorAll('.mole');
+const startbutton = document.querySelector('.start');
   let lastHole;
   let timeUp = false;
   let score = 0;
@@ -35,7 +36,7 @@ const holes = document.querySelectorAll('.hole');
   }
 
   function startGame() {
-    
+    startbutton.disabled = true;
     subvar = randomcompound(Math.floor(Math.random()*arr.length)); 
     alert("Look for " + subvar + "'s molar mass!);
     scoreBoard.textContent = 0;
@@ -51,6 +52,7 @@ const holes = document.querySelectorAll('.hole');
     score++;
     this.parentNode.classList.remove('up');
     scoreBoard.textContent = score;
+    startbutton.disabled = false;
   }
 
   moles.forEach(mole => mole.addEventListener('click', whack));
