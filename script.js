@@ -2,7 +2,7 @@
 const holes = document.querySelectorAll('.hole');
   const scoreBoard = document.querySelector('.score');
   const moles = document.querySelectorAll('.mole');
-const startbutton = document.querySelector('.start');
+const startbutton = document.querySelector('#start');
   let lastHole;
   let timeUp = false;
   let score = 0;
@@ -38,7 +38,7 @@ const startbutton = document.querySelector('.start');
   function startGame() {
     startbutton.disabled = true;
     subvar = randomcompound(Math.floor(Math.random()*arr.length)); 
-
+    alert("Look for the molar mass of" + subvar);
     scoreBoard.textContent = 0;
     timeUp = false;
     score = 0;
