@@ -5,7 +5,7 @@ const holes = document.querySelectorAll('.hole');
   let lastHole;
   let timeUp = false;
   let score = 0;
-  let arr = {"NaCl","NH4","SO4","NO3","Cr2O7"};
+  let arr = ["NaCl","NH4","SO4","NO3","Cr2O7"];
 
   function randomcompound(randnumb) {
     return arr[randnumb];
